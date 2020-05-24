@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/style.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div id="form-container">
+            <h1>Finals Grade Calculator</h1>
+
+            <hr>
+
+            <form>
+                <div class="field-element">
+                    <label>I want atleast a </label>
+                    <input type="text" id="target">
+                    <p>% in the class</p>
+                </div>
+                
+                <div class="field-element">
+                    <label>My current grade is </label><input type="text" id="current"><p>%</p>
+                </div>
+                
+                <div class="field-element">
+                    <label>The final is worth </label><input type="text" id="final-weight"><p>% of my grade</p>
+                </div>
+            </form>
+            
+            <button onclick="runCalc()">Calculate</button>
+
+            <hr>
+
+            <span id="message"></span>
+        </div>
+
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
